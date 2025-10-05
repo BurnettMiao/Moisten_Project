@@ -1,6 +1,24 @@
 @font-face {
+  font-family: LINESeedTW;
+  src: url('@/assets/fonts/LINESeedTW_TTF_Rg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @import 'tailwindcss';
 
 /* 以下為 custom css */
+@theme {
+  --color-moisten-text: #373d46;
+  --color-moisten-bg-green: #3b6c4b;
+  --color-moisten-bg-orange: #d45342;
+  --color-moisten-bg: #f6f6fa;
+}
+
+html,
+body {
+  font-family: 'LINESeedTW', sans-serif;
+  font-size: var(--text-lg);
+  background-color: var(--color-moisten-bg);
+  color: var(--color-moisten-text);
+}
