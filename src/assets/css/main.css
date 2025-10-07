@@ -18,7 +18,6 @@
 html,
 body {
   font-family: 'LINESeedTW', sans-serif;
-  font-size: var(--text-lg);
   background-color: var(--color-moisten-bg);
   color: var(--color-moisten-text);
 }
