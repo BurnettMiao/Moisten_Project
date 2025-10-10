@@ -3,16 +3,7 @@ import BottomOne from '@/components/BottomOne.vue'
 </script>
 
 <template>
-  <div class="bg-moisten-light-green relative">
-    <!-- 裝飾底圖 -->
-    <div class="absolute top-0 left-0 w-full h-full">
-      <img
-        src="../assets/img/wave.svg"
-        class="w-full h-full object-fill object-center opacity-85 pointer-events-none select-none z-0"
-        alt="wave background"
-      />
-    </div>
-
+  <div class="bg-moisten-light-green relative wave-bg">
     <div class="max-w-7xl mx-auto py-[110px] relative">
       <div
         class="absolute top-[110px] right-0 w-[155px] h-[155px] border border-t-white border-r-white border-b-0 border-l-0"
@@ -52,3 +43,25 @@ import BottomOne from '@/components/BottomOne.vue'
     </div>
   </div>
 </template>
+
+<style scoped>
+.wave-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/img/wave.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 1921px) {
+  .wave-bg::before {
+    background-image: url('../assets/img/wave01.svg');
+    background-size: cover;
+  }
+}
+</style>
