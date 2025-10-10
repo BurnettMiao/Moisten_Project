@@ -3,7 +3,16 @@ import BottomOne from '@/components/BottomOne.vue'
 </script>
 
 <template>
-  <div class="bg-moisten-light-green">
+  <div class="bg-moisten-light-green relative">
+    <!-- 裝飾底圖 -->
+    <div class="absolute top-0 left-0 w-full h-full">
+      <img
+        src="../assets/img/wave.svg"
+        class="w-full h-full object-fill object-center opacity-85 pointer-events-none select-none z-0"
+        alt="wave background"
+      />
+    </div>
+
     <div class="max-w-7xl mx-auto py-[110px] relative">
       <div
         class="absolute top-[110px] right-0 w-[155px] h-[155px] border border-t-white border-r-white border-b-0 border-l-0"
