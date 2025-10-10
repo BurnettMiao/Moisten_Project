@@ -1,7 +1,16 @@
+/* Regular */
 @font-face {
-  font-family: LINESeedTW;
+  font-family: 'LINESeedTW';
   src: url('@/assets/fonts/LINESeedTW_TTF_Rg.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'LINESeedTW';
+  src: url('@/assets/fonts/LINESeedTW_TTF_Bd.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -10,14 +19,15 @@
 /* 以下為 custom css */
 @theme {
   --color-moisten-text: #373d46;
-  --color-moisten-bg-green: #3b6c4b;
-  --color-moisten-bg-orange: #d45342;
-  --color-moisten-bg: #f6f6fa;
+  --color-moisten-green: #3b6c4b;
+  --color-moisten-light-green: #a8cdab;
+  --color-moisten-orange: #d45342;
+  --color-moisten-white: #f6f6fa;
 }
 
 html,
 body {
   font-family: 'LINESeedTW', sans-serif;
-  background-color: var(--color-moisten-bg);
+  background-color: var(--color-moisten-white);
   color: var(--color-moisten-text);
 }
