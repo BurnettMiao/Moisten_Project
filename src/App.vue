@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection.vue'
 import IntroduceSection from '@/components/IntroduceSection.vue'
 import OurGoalsSection from '@/components/OurGoalsSection.vue'
 import EventRecord from '@/components/EventRecord.vue'
+import StoreSection from '@/components/StoreSection.vue'
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import EventRecord from '@/components/EventRecord.vue'
   <IntroduceSection />
   <OurGoalsSection />
   <EventRecord />
+  <StoreSection />
 </template>
 
 <style scoped></style>
