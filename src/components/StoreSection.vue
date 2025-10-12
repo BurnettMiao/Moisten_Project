@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
   <div
-    class="bg-moisten-white max-w-7xl mx-auto max-h-[350px] mt-[110px] mb-[55px] flex items-center justify-center relative px-4"
+    class="bg-moisten-white max-w-7xl mx-auto max-h-[350px] mt-[55px] xl:mt-[110px] mb-[55px] flex items-center justify-center relative px-4"
   >
     <img
       class="absolute top-0 left-0 w-full h-full object-cover object-center"

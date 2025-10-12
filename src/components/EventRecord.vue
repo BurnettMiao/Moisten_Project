@@ -27,7 +27,7 @@ const eventCardsInfo = ref([
 
 <template>
   <div class="bg-moisten-light-green/50">
-    <div class="max-w-7xl mx-auto pt-[65px] pb-[85px] px-4 xl:px-0">
+    <div class="max-w-7xl mx-auto pt-[55px] pb-[55px] xl:pt-[65px] xl:pb-[85px] px-4 xl:px-0">
       <div class="w-full flex items-center justify-between">
         <SectionTitle>活動紀錄</SectionTitle>
         <div class="flex items-center justify-center gap-[17px]">

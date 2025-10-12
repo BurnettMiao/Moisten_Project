@@ -14,7 +14,7 @@ const imgAndTextArr = ref([
     <div v-for="(item, index) in imgAndTextArr" :key="index" class="w-full h-full relative">
       <img class="w-full h-full object-cover object-center" :src="item.img" alt="" />
       <span
-        class="absolute top-1/2 left-1/2 z-10 text-8xl text-white font-bold opacity-90 -translate-x-1/2 -translate-y-1/2 hero-text"
+        class="absolute top-1/2 left-1/2 z-10 text-[64px] xl:text-8xl text-white font-bold opacity-90 -translate-x-1/2 -translate-y-1/2 hero-text"
         >{{ item.text }}</span
       >
     </div>

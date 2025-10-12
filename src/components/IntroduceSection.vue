@@ -4,9 +4,9 @@ import BottomOne from '@/components/BottomOne.vue'
 
 <template>
   <div class="bg-moisten-light-green relative wave-bg px-4 xl:px-0">
-    <div class="max-w-7xl mx-auto pt-[110px] pb-[120px] relative">
+    <div class="max-w-7xl mx-auto pt-[45px] pb-[45px] xl:pt-[110px] xl:pb-[120px] relative">
       <div
-        class="absolute top-[110px] right-0 w-[155px] h-[155px] border border-t-white border-r-white border-b-0 border-l-0"
+        class="hidden md:block absolute top-[110px] right-0 w-[155px] h-[155px] border border-t-white border-r-white border-b-0 border-l-0"
       ></div>
       <div
         class="absolute bottom-[220px] -right-[110px] text-4xl font-bold text-white opacity-20 rotate-90"
@@ -14,9 +14,13 @@ import BottomOne from '@/components/BottomOne.vue'
         ENJOY LIFES
       </div>
 
-      <h2 class="moisten-text text-4xl font-bold">從餐桌出發，回到生活</h2>
+      <h2 class="moisten-text text-[26px] xl:text-4xl font-bold text-center xl:text-left">
+        從餐桌出發，回到生活
+      </h2>
 
-      <div class="flex items-center justify-between gap-[128px] mt-[120px]">
+      <div
+        class="flex flex-col xl:flex-row items-center justify-between gap-5 xl:gap-[128px] mt-10 xl:mt-[120px]"
+      >
         <div
           class="max-w-[630px] max-h-[478px] flex items-center justify-center rounded-xl overflow-hidden"
         >
@@ -27,7 +31,7 @@ import BottomOne from '@/components/BottomOne.vue'
           />
         </div>
 
-        <div class="flex-1 flex items-start flex-col gap-[35px] self-end">
+        <div class="flex-1 flex items-start flex-col gap-[35px] xl:self-end">
           <div class="text-white text-xl">
             <div>我們從一間小小的公寓廚房出發，</div>
             <div>邀請你透過味覺與感官，</div>
@@ -35,7 +39,9 @@ import BottomOne from '@/components/BottomOne.vue'
             <div class="pt-[28px]">關於土地、飲食、身體，與我們自己。</div>
           </div>
 
-          <div class="h-[105px] border border-t-0 border-r-0 border-b-0 border-l-white"></div>
+          <div
+            class="h-[105px] border border-t-0 border-r-0 border-b-0 border-l-white ml-4 xl:ml-0"
+          ></div>
 
           <BottomOne />
         </div>

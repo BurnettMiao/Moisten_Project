@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="title-dot relative text-4xl font-bold pl-[30px]">
+  <div class="title-dot relative text-[26px] xl:text-4xl font-bold pl-[30px]">
     <slot></slot>
   </div>
 </template>

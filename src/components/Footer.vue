@@ -1,8 +1,8 @@
 <script setup></script>
 <template>
   <div class="bg-moisten-orange pt-[55px] pb-[35px] text-white px-4 xl:px-0">
-    <div class="max-w-7xl mx-auto flex flex-wrap gap-6 items-stretch justify-between">
-      <div class="flex flex-col items-stretch justify-between">
+    <div class="max-w-7xl mx-auto flex flex-wrap gap-12 xl:gap-6 items-stretch justify-between">
+      <div class="flex flex-col items-stretch justify-between gap-8 xl:gap-0">
         <div class="font-bold text-[40px] leading-10">Moisten</div>
 
         <div class="flex items-center">
@@ -11,7 +11,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col gap-9">
+      <div class="flex flex-col gap-4 xl:gap-9">
         <div class="font-bold text-2xl">關於我們</div>
         <div class="flex flex-col gap-2">
           <div>我們從一間小小的公寓廚房出發，</div>
@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <div class="flex flex-col gap-9">
+      <div class="flex flex-col gap-4 xl:gap-9">
         <div class="font-bold text-2xl">聯絡我們</div>
         <div class="flex items-start flex-col gap-2">
           <div class="flex items-center gap-3">

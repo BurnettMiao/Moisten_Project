@@ -10,14 +10,16 @@ import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
-  <Navbar />
-  <HeroSection />
-  <IntroduceSection />
-  <OurGoalsSection />
-  <EventRecord />
-  <StoreSection />
-  <QASection />
-  <Footer />
+  <div class="overflow-hidden">
+    <Navbar />
+    <HeroSection />
+    <IntroduceSection />
+    <OurGoalsSection />
+    <EventRecord />
+    <StoreSection />
+    <QASection />
+    <Footer />
+  </div>
 </template>
 
 <style scoped></style>

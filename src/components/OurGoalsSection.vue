@@ -6,16 +6,18 @@ const ourGoalsContent = [{}]
 
 <template>
   <div class="bg-moisten-white">
-    <div class="max-w-7xl mx-auto pt-[75px] pb-[110px] px-4 xl:px-0">
+    <div class="max-w-7xl mx-auto pt-[55px] pb-[75px] xl:pt-[75px] xl:pb-[110px] px-4 xl:px-0">
       <SectionTitle>我們目標</SectionTitle>
 
-      <div class="mt-15 flex flex-col items-center justify-around gap-20">
-        <div class="flex items-center justify-center">
-          <div class="relative left-[18px] max-w-[355px]">
-            <div class="relative w-[380px] bg-moisten-white z-10">
-              <div class="px-[32px] py-[30px] flex flex-col gap-4">
+      <div class="mt-10 xl:mt-15 flex flex-col items-center justify-around gap-13 xl:gap-20">
+        <div class="flex flex-col-reverse xl:flex-row items-center justify-center">
+          <div class="relative left-0 xl:left-[18px] w-full xl:max-w-[355px]">
+            <div class="relative w-full xl:w-[380px] bg-moisten-white z-10">
+              <div class="px-[15px] xl:px-[32px] py-[30px] flex flex-col gap-4">
                 <div>
-                  <div class="text-[26px] text-moisten-green font-bold">關注在地社會議題</div>
+                  <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold">
+                    關注在地社會議題
+                  </div>
                   <div class="text-lg">小資廚房進化中...</div>
                 </div>
                 <div class="w-full h-[1px] bg-moisten-text"></div>
@@ -35,7 +37,7 @@ const ourGoalsContent = [{}]
           </div>
 
           <div
-            class="max-w-[925px] max-h-[485px] overflow-hidden flex items-center justify-center rounded-2xl relative"
+            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden flex items-center justify-center rounded-2xl relative"
           >
             <img
               src="https://images.unsplash.com/photo-1472926373053-51b220987527?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -44,9 +46,9 @@ const ourGoalsContent = [{}]
           </div>
         </div>
 
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center flex-col xl:flex-row">
           <div
-            class="max-w-[925px] max-h-[485px] overflow-hidden flex items-center justify-center rounded-2xl relative"
+            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden flex items-center justify-center rounded-2xl relative"
           >
             <img
               src="https://images.unsplash.com/photo-1624893464636-c122891445c6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -54,11 +56,15 @@ const ourGoalsContent = [{}]
             />
           </div>
 
-          <div class="relative right-[50px] max-w-[355px]">
-            <div class="relative w-[380px] bg-moisten-white z-10 -right-[8px]">
-              <div class="px-[32px] py-[30px] flex flex-col gap-4">
+          <div class="relative right-0 xl:right-[50px] w-full xl:max-w-[355px]">
+            <div
+              class="relative w-full xl:w-[380px] bg-moisten-white z-10 -right-0 xl:-right-[8px]"
+            >
+              <div class="px-[15px] xl:px-[32px] py-[30px] flex flex-col gap-4">
                 <div>
-                  <div class="text-[26px] text-moisten-green font-bold">符合道德的材料</div>
+                  <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold">
+                    符合道德的材料
+                  </div>
                   <div class="text-lg">追尋日本宇治茶的來源，建立產地來源的新關係。</div>
                 </div>
                 <div class="w-full h-[1px] bg-moisten-text"></div>
@@ -76,12 +82,14 @@ const ourGoalsContent = [{}]
           </div>
         </div>
 
-        <div class="flex items-center justify-center">
-          <div class="relative left-[18px] max-w-[355px]">
-            <div class="relative w-[380px] bg-moisten-white z-10">
-              <div class="px-[32px] py-[30px] flex flex-col gap-4">
+        <div class="flex items-center justify-center flex-col-reverse xl:flex-row">
+          <div class="relative xl-left-0 xl:left-[18px] w-full xl:max-w-[355px]">
+            <div class="relative w-full xl:w-[380px] bg-moisten-white z-10">
+              <div class="px-[15px] xl:px-[32px] py-[30px] flex flex-col gap-4">
                 <div>
-                  <div class="text-[26px] text-moisten-green font-bold">環境永續</div>
+                  <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold">
+                    環境永續
+                  </div>
                   <div class="text-lg">除了活動設計，我們正在學習更永續的環境議題。</div>
                 </div>
                 <div class="w-full h-[1px] bg-moisten-text"></div>
@@ -102,7 +110,7 @@ const ourGoalsContent = [{}]
           </div>
 
           <div
-            class="max-w-[925px] max-h-[485px] overflow-hidden flex items-center justify-center rounded-2xl relative"
+            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden flex items-center justify-center rounded-2xl relative"
           >
             <img
               src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
