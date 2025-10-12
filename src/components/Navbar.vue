@@ -5,7 +5,7 @@ const navItems = ref(['關於我們', '我們目標', '活動紀錄', '商店', 
 </script>
 
 <template>
-  <nav class="w-full flex items-center justify-center gap-12 py-[20px] fixed z-20">
+  <nav class="w-full flex items-center justify-center gap-12 py-[20px] fixed z-50">
     <div class="bg-white/25 flex py-[10px] px-[20px] rounded-4xl gap-12 shadow-md">
       <span
         v-for="(item, index) in navItems"

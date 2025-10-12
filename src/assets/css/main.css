@@ -1,3 +1,11 @@
+/* Thing */
+@font-face {
+  font-family: 'LINESeedTW';
+  src: url('@/assets/fonts/LINESeedTW_TTF_Th.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Regular */
 @font-face {
   font-family: 'LINESeedTW';
