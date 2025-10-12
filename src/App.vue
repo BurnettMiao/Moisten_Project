@@ -6,6 +6,7 @@ import OurGoalsSection from '@/components/OurGoalsSection.vue'
 import EventRecord from '@/components/EventRecord.vue'
 import StoreSection from '@/components/StoreSection.vue'
 import QASection from '@/components/QASection.vue'
+import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import QASection from '@/components/QASection.vue'
   <EventRecord />
   <StoreSection />
   <QASection />
+  <Footer />
 </template>
 
 <style scoped></style>
