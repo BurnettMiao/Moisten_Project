@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="bg-moisten-orange pt-[55px] pb-[35px] text-white">
+  <div class="bg-moisten-orange pt-[55px] pb-[35px] text-white px-4 xl:px-0">
     <div class="max-w-7xl mx-auto flex flex-wrap gap-6 items-stretch justify-between">
       <div class="flex flex-col items-stretch justify-between">
         <div class="font-bold text-[40px] leading-10">Moisten</div>
