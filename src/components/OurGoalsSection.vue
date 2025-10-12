@@ -9,7 +9,9 @@ const ourGoalsContent = [{}]
     <div class="max-w-7xl mx-auto pt-[55px] pb-[75px] xl:pt-[75px] xl:pb-[110px] px-4 xl:px-0">
       <SectionTitle>我們目標</SectionTitle>
 
-      <div class="mt-10 xl:mt-15 flex flex-col items-center justify-around gap-13 xl:gap-20">
+      <div
+        class="mt-10 xl:mt-15 flex flex-col items-center justify-around gap-13 xl:gap-20 max-w-[640px] xl:max-w-full mx-auto"
+      >
         <div class="flex flex-col-reverse xl:flex-row items-center justify-center">
           <div class="relative left-0 xl:left-[18px] w-full xl:max-w-[355px]">
             <div class="relative w-full xl:w-[380px] bg-moisten-white z-10">
@@ -77,7 +79,7 @@ const ourGoalsContent = [{}]
             </div>
 
             <div
-              class="absolute w-[355px] h-[185px] -bottom-[18px] -right-[50px] bg-moisten-light-green z-0"
+              class="absolute w-[355px] h-[185px] -bottom-[18px] -right-[18px] xl:-right-[50px] bg-moisten-light-green z-0"
             ></div>
           </div>
         </div>

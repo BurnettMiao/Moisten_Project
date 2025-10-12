@@ -10,9 +10,9 @@
     />
 
     <div class="relative z-10 flex flex-col items-center justify-center gap-[25px] py-[112px]">
-      <div class="text-4xl text-white font-bold">Vist Our Stoere</div>
+      <div class="text-[30px] xl:text-4xl text-white font-bold">Vist Our Stoere</div>
       <div
-        class="inline-block px-[25px] py-[16px] border border-white rounded-4xl text-white text-xl hover:bg-white hover:text-moisten-text duration-500 cursor-pointer"
+        class="inline-block px-[25px] py-[16px] border border-white rounded-4xl text-white text-lg xl:text-xl hover:bg-white hover:text-moisten-text duration-500 cursor-pointer"
       >
         即刻前往
       </div>
