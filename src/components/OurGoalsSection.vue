@@ -6,7 +6,7 @@ const ourGoalsContent = [{}]
 
 <template>
   <div class="bg-moisten-white">
-    <div class="max-w-7xl mx-auto py-[110px]">
+    <div class="max-w-7xl mx-auto pt-[75px] pb-[110px]">
       <SectionTitle>我們目標</SectionTitle>
 
       <div class="mt-15 flex flex-col items-center justify-around gap-20">

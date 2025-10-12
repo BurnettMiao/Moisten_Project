@@ -4,7 +4,7 @@ import BottomOne from '@/components/BottomOne.vue'
 
 <template>
   <div class="bg-moisten-light-green relative wave-bg">
-    <div class="max-w-7xl mx-auto py-[110px] relative">
+    <div class="max-w-7xl mx-auto pt-[110px] pb-[120px] relative">
       <div
         class="absolute top-[110px] right-0 w-[155px] h-[155px] border border-t-white border-r-white border-b-0 border-l-0"
       ></div>
