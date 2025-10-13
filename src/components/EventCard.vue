@@ -1,8 +1,9 @@
 <script setup>
+import { ref } from 'vue'
 const props = defineProps({
   eventCardsInfo: {
     type: Array,
-    require: true,
+    required: true,
   },
 })
 
@@ -15,9 +16,38 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 const modules = [Pagination]
+const swiperRef = ref(null)
+const swiperInstance = ref(null)
+
+const onSwiper = (swiper) => {
+  console.log('onSwiper called:', swiper)
+  swiperInstance.value = swiper
+}
+
+// 暴露方法給父組件
+defineExpose({
+  slidePrev: () => {
+    console.log('slidePrev called, swiperInstance:', swiperInstance.value)
+    if (swiperInstance.value) {
+      swiperInstance.value.slidePrev()
+    } else {
+      console.log('swiperInstance is null')
+    }
+  },
+  slideNext: () => {
+    console.log('slideNext called, swiperInstance:', swiperInstance.value)
+    if (swiperInstance.value) {
+      swiperInstance.value.slideNext()
+    } else {
+      console.log('swiperInstance is null')
+    }
+  },
+})
 </script>
 <template>
   <swiper
+    ref="swiperRef"
+    @swiper="onSwiper"
     :loop="true"
     :slides-per-view="'auto'"
     :space-between="20"

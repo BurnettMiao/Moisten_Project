@@ -29,6 +29,30 @@ const eventCardsInfo = ref([
     lable: '節氣活動',
   },
 ])
+
+const eventCardRef = ref(null)
+
+const handlePrevSlide = () => {
+  console.log('handlePrevSlide clicked')
+  console.log('eventCardRef.value:', eventCardRef.value)
+  if (eventCardRef.value) {
+    console.log('calling slidePrev')
+    eventCardRef.value.slidePrev()
+  } else {
+    console.log('eventCardRef.value is null')
+  }
+}
+
+const handleNextSlide = () => {
+  console.log('handleNextSlide clicked')
+  console.log('eventCardRef.value:', eventCardRef.value)
+  if (eventCardRef.value) {
+    console.log('calling slideNext')
+    eventCardRef.value.slideNext()
+  } else {
+    console.log('eventCardRef.value is null')
+  }
+}
 </script>
 
 <template>
@@ -38,11 +62,13 @@ const eventCardsInfo = ref([
         <SectionTitle>活動紀錄</SectionTitle>
         <div class="hidden lg:flex items-center justify-center gap-[17px]">
           <div
+            @click="handlePrevSlide"
             class="w-[30px] h-[30px] border border-moisten-text rounded-full cursor-pointer flex items-center justify-center text-xl group hover:border-moisten-orange hover:bg-moisten-orange duration-300"
           >
             <i class="ri-arrow-left-line group-hover:text-white"></i>
           </div>
           <div
+            @click="handleNextSlide"
             class="w-[30px] h-[30px] border border-moisten-text rounded-full cursor-pointer flex items-center justify-center text-xl group hover:border-moisten-orange hover:bg-moisten-orange duration-300"
           >
             <i class="ri-arrow-right-line group-hover:text-white"></i>
@@ -50,7 +76,7 @@ const eventCardsInfo = ref([
         </div>
       </div>
 
-      <EventCard :eventCardsInfo="eventCardsInfo" />
+      <EventCard ref="eventCardRef" :eventCardsInfo="eventCardsInfo" />
     </div>
   </div>
 </template>
