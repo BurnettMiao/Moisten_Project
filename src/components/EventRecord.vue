@@ -36,7 +36,7 @@ const eventCardsInfo = ref([
     <div class="max-w-7xl mx-auto pt-[55px] pb-[55px] xl:pt-[65px] xl:pb-[85px] px-4 xl:px-0">
       <div class="w-full flex items-center justify-between">
         <SectionTitle>活動紀錄</SectionTitle>
-        <div class="flex items-center justify-center gap-[17px]">
+        <div class="hidden lg:flex items-center justify-center gap-[17px]">
           <div
             class="w-[30px] h-[30px] border border-moisten-text rounded-full cursor-pointer flex items-center justify-center text-xl group hover:border-moisten-orange hover:bg-moisten-orange duration-300"
           >

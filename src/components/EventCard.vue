@@ -26,7 +26,7 @@ const modules = [Pagination]
   >
     <swiper-slide
       v-for="(item, itenIndex) in props.eventCardsInfo"
-      class="max-w-[320px] xl:max-w-[410px] rounded-lg overflow-hidden cursor-pointer group"
+      class="max-w-[320px] lg:max-w-[410px] rounded-lg overflow-hidden cursor-pointer group"
       :key="itenIndex"
     >
       <div class="w-full h-[360px] overflow-hidden">
