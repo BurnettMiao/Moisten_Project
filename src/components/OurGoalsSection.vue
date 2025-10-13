@@ -39,9 +39,10 @@ const ourGoalsContent = [{}]
           </div>
 
           <div
-            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden flex items-center justify-center rounded-2xl relative"
+            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden rounded-2xl relative"
           >
             <img
+              class="w-full h-full object-cover object-center"
               src="https://images.unsplash.com/photo-1472926373053-51b220987527?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
@@ -50,9 +51,10 @@ const ourGoalsContent = [{}]
 
         <div class="flex items-center justify-center flex-col xl:flex-row">
           <div
-            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden flex items-center justify-center rounded-2xl relative"
+            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden rounded-2xl relative"
           >
             <img
+              class="w-full h-full object-cover object-center"
               src="https://images.unsplash.com/photo-1624893464636-c122891445c6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
@@ -112,9 +114,10 @@ const ourGoalsContent = [{}]
           </div>
 
           <div
-            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden flex items-center justify-center rounded-2xl relative"
+            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden rounded-2xl relative"
           >
             <img
+              class="w-full h-full object-cover object-center"
               src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />

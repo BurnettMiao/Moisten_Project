@@ -17,4 +17,10 @@
   width: 15px;
   background-color: var(--color-moisten-orange);
 }
+
+@media screen and (max-width: 1280px) {
+  .title-dot::before {
+    top: 7px;
+  }
+}
 </style>
