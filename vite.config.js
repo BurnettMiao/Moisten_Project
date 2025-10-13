@@ -8,6 +8,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Moisten_Project/', // ✅ 加這行很重要！
   plugins: [vue(), vueDevTools(), tailwindcss()],
   resolve: {
     alias: {
