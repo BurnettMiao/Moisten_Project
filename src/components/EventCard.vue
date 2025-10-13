@@ -5,12 +5,28 @@ const props = defineProps({
     require: true,
   },
 })
+
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue'
+// import required modules
+import { Pagination } from 'swiper/modules'
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/pagination'
+
+const modules = [Pagination]
 </script>
 <template>
-  <div class="mt-[55px] flex items-center justify-between">
-    <div
+  <swiper
+    :loop="true"
+    :slides-per-view="'auto'"
+    :space-between="20"
+    :modules="modules"
+    class="mt-[55px]"
+  >
+    <swiper-slide
       v-for="(item, itenIndex) in props.eventCardsInfo"
-      class="max-w-[410px] rounded-lg overflow-hidden cursor-pointer group"
+      class="max-w-[320px] xl:max-w-[410px] rounded-lg overflow-hidden cursor-pointer group"
       :key="itenIndex"
     >
       <div class="w-full h-[360px] overflow-hidden">
@@ -33,6 +49,6 @@ const props = defineProps({
           <div class="text-[26px] font-bold text-moisten-text">{{ item.title }}</div>
         </div>
       </div>
-    </div>
-  </div>
+    </swiper-slide>
+  </swiper>
 </template>
