@@ -1,5 +1,25 @@
 <script setup>
+import { onMounted } from 'vue'
 import BottomOne from '@/components/BottomOne.vue'
+import ScrollReveal from 'scrollreveal'
+
+const scrollRevealOption = {
+  distance: '50px',
+  origin: 'bottom',
+  duration: 1000,
+}
+
+onMounted(() => {
+  ScrollReveal().reveal('.introduce-img', {
+    ...scrollRevealOption,
+  })
+
+  ScrollReveal().reveal('.introduce-content', {
+    ...scrollRevealOption,
+    origin: 'right',
+    delay: 500,
+  })
+})
 </script>
 
 <template>
@@ -22,7 +42,7 @@ import BottomOne from '@/components/BottomOne.vue'
         class="flex flex-col xl:flex-row items-center justify-between gap-5 xl:gap-[128px] mt-10 xl:mt-[120px]"
       >
         <div
-          class="max-w-[630px] max-h-[478px] flex items-center justify-center rounded-xl overflow-hidden"
+          class="introduce-img max-w-[630px] max-h-[478px] flex items-center justify-center rounded-xl overflow-hidden"
         >
           <img
             class="object-cover"
@@ -31,7 +51,7 @@ import BottomOne from '@/components/BottomOne.vue'
           />
         </div>
 
-        <div class="flex-1 flex items-start flex-col gap-[35px] xl:self-end">
+        <div class="introduce-content flex-1 flex items-start flex-col gap-[35px] xl:self-end">
           <div class="text-white text-xl">
             <div>我們從一間小小的公寓廚房出發，</div>
             <div>邀請你透過味覺與感官，</div>

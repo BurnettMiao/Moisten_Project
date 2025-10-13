@@ -1,7 +1,50 @@
 <script setup>
+import { onMounted } from 'vue'
+import ScrollReveal from 'scrollreveal'
+
 import SectionTitle from '@/components/SectionTitle.vue'
 
 const ourGoalsContent = [{}]
+
+const scrollRevealOption = {
+  distance: '50px',
+  origin: 'bottom',
+  duration: 1000,
+}
+
+onMounted(() => {
+  ScrollReveal().reveal('.goals-one-card', {
+    ...scrollRevealOption,
+    origin: 'left',
+  })
+  ScrollReveal().reveal('.goals-one-pic', {
+    ...scrollRevealOption,
+    origin: 'right',
+    delay: 500,
+  })
+
+  ScrollReveal().reveal('.goals-two-pic', {
+    ...scrollRevealOption,
+    origin: 'left',
+    delay: 1000,
+  })
+  ScrollReveal().reveal('.goals-two-card', {
+    ...scrollRevealOption,
+    origin: 'bottom',
+    delay: 1500,
+  })
+
+  // ScrollReveal().reveal('.goals-three-card', {
+  //   ...scrollRevealOption,
+  //   origin: 'right',
+  //   delay: 1500,
+  // })
+  ScrollReveal().reveal('.goals-three-pic', {
+    ...scrollRevealOption,
+    origin: 'bottom',
+    delay: 1800,
+  })
+})
 </script>
 
 <template>
@@ -10,7 +53,7 @@ const ourGoalsContent = [{}]
       <SectionTitle>我們目標</SectionTitle>
 
       <div
-        class="mt-10 xl:mt-15 flex flex-col items-center justify-around gap-13 xl:gap-20 max-w-[640px] xl:max-w-full mx-auto"
+        class="goals-one-card mt-10 xl:mt-15 flex flex-col items-center justify-around gap-13 xl:gap-20 max-w-[640px] xl:max-w-full mx-auto"
       >
         <div class="flex flex-col-reverse xl:flex-row items-center justify-center">
           <div class="relative left-0 xl:left-[18px] w-full xl:max-w-[355px]">
@@ -39,7 +82,7 @@ const ourGoalsContent = [{}]
           </div>
 
           <div
-            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden rounded-2xl relative"
+            class="goals-one-pic max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden rounded-2xl relative"
           >
             <img
               class="w-full h-full object-cover object-center"
@@ -51,7 +94,7 @@ const ourGoalsContent = [{}]
 
         <div class="flex items-center justify-center flex-col xl:flex-row">
           <div
-            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden rounded-2xl relative"
+            class="goals-two-pic max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden rounded-2xl relative"
           >
             <img
               class="w-full h-full object-cover object-center"
@@ -60,7 +103,7 @@ const ourGoalsContent = [{}]
             />
           </div>
 
-          <div class="relative right-0 xl:right-[50px] w-full xl:max-w-[355px]">
+          <div class="goals-two-card relative right-0 xl:right-[50px] w-full xl:max-w-[355px]">
             <div
               class="relative w-full xl:w-[380px] bg-moisten-white z-10 -right-0 xl:-right-[8px]"
             >
@@ -87,7 +130,7 @@ const ourGoalsContent = [{}]
         </div>
 
         <div class="flex items-center justify-center flex-col-reverse xl:flex-row">
-          <div class="relative xl-left-0 xl:left-[18px] w-full xl:max-w-[355px]">
+          <div class="goals-three-card relative xl-left-0 xl:left-[18px] w-full xl:max-w-[355px]">
             <div class="relative w-full xl:w-[380px] bg-moisten-white z-10">
               <div class="px-[15px] xl:px-[32px] py-[30px] flex flex-col gap-4">
                 <div>
@@ -114,7 +157,7 @@ const ourGoalsContent = [{}]
           </div>
 
           <div
-            class="max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden rounded-2xl relative"
+            class="goals-three-pic max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden rounded-2xl relative"
           >
             <img
               class="w-full h-full object-cover object-center"
