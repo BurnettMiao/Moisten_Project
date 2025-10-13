@@ -9,7 +9,7 @@ import BottomOne from '@/components/BottomOne.vue'
         class="hidden md:block absolute top-[110px] right-0 w-[155px] h-[155px] border border-t-white border-r-white border-b-0 border-l-0"
       ></div>
       <div
-        class="absolute bottom-[220px] -right-[110px] text-4xl font-bold text-white opacity-20 rotate-90"
+        class="hidden md:block absolute bottom-[220px] -right-[110px] text-4xl font-bold text-white opacity-20 rotate-90"
       >
         ENJOY LIFES
       </div>
