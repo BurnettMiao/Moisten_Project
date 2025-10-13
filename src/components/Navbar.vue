@@ -1,7 +1,14 @@
 <script setup>
 import { ref } from 'vue'
+import SmallMenu from '@/components/SmallMenu.vue'
 
 const navItems = ref(['關於我們', '我們目標', '活動紀錄', '商店', '常見問題', '聯絡我們'])
+
+const oepnMenu = ref(false)
+
+const toggleMenu = () => {
+  oepnMenu.value = !oepnMenu.value
+}
 </script>
 
 <template>
@@ -15,4 +22,12 @@ const navItems = ref(['關於我們', '我們目標', '活動紀錄', '商店', 
       >
     </div>
   </nav>
+
+  <nav @click="toggleMenu" class="fixed top-5 right-5 text-white z-50">
+    <i
+      class="text-3xl cursor-pointer"
+      :class="oepnMenu ? 'ri-close-line text-moisten-text' : 'ri-menu-line'"
+    ></i>
+  </nav>
+  <SmallMenu v-if="oepnMenu" :navItems="navItems" />
 </template>

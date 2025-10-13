@@ -5,9 +5,9 @@
       <div class="flex flex-col items-stretch justify-between gap-8 xl:gap-0">
         <div class="font-bold text-[40px] leading-10">Moisten</div>
 
-        <div class="flex items-center">
-          <i class="ri-facebook-box-fill text-5xl"></i>
-          <i class="ri-instagram-fill text-5xl"></i>
+        <div class="flex items-center gap-2">
+          <i class="ri-facebook-box-fill text-4xl xl:text-5xl"></i>
+          <i class="ri-instagram-fill text-4xl xl:text-5xl"></i>
         </div>
       </div>
 
