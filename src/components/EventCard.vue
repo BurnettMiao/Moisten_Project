@@ -22,7 +22,7 @@ const modules = [Pagination]
     :slides-per-view="'auto'"
     :space-between="20"
     :modules="modules"
-    class="mt-[55px]"
+    class="mt-[30px] xl:mt-[55px]"
   >
     <swiper-slide
       v-for="(item, itenIndex) in props.eventCardsInfo"
