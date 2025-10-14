@@ -46,10 +46,11 @@ const modules = [Pagination, Autoplay]
         >{{ item.text }}</span
       >
     </swiper-slide>
+
     <swiper-slide class="w-full h-full relative">
       <video autoplay loop muted playsinline class="w-full h-full object-cover object-center">
         <source
-          src="https://video.wixstatic.com/video/11062b_40811fcc9cac4a5bbfb0d93aaa94d70d/720p/mp4/file.mp4"
+          src="https://videos.pexels.com/video-files/3255109/3255109-uhd_2560_1440_25fps.mp4"
           type="video/mp4"
         />
       </video>
