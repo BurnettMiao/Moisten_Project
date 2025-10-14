@@ -17,7 +17,7 @@ const toggleMenu = () => {
       <span
         v-for="(item, index) in navItems"
         :key="index"
-        class="text-white opacity-100 cursor-pointer font-bold text-lg hover:text-moisten-bg-orange"
+        class="text-white opacity-100 cursor-pointer font-bold text-lg hover:text-moisten-orange"
         >{{ item }}</span
       >
     </div>
