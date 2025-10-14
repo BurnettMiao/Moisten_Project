@@ -90,4 +90,16 @@ onMounted(() => {
     background-size: cover;
   }
 }
+
+@media (max-width: 640px) {
+  .wave-bg::before {
+    top: unset;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('../assets/img/wave-small.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
 </style>
