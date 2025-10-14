@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import SmallMenu from '@/components/SmallMenu.vue'
 
 const navItems = ref(['關於我們', '我們目標', '活動紀錄', '商店', '常見問題', '聯絡我們'])
@@ -9,6 +9,15 @@ const oepnMenu = ref(false)
 const toggleMenu = () => {
   oepnMenu.value = !oepnMenu.value
 }
+
+// 用 watch 監聽選單狀態變化
+watch(oepnMenu, (newVal) => {
+  if (newVal) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = 'auto'
+  }
+})
 </script>
 
 <template>
