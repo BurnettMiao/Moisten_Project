@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="block [420px]:hidden w-full h-[95vh]">
+  <div class="block sm:hidden w-full h-[95vh]">
     <div class="w-full h-full relative">
       <video autoplay loop muted playsinline class="w-full h-full object-cover object-center">
         <source
