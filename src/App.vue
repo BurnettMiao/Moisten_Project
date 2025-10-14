@@ -8,6 +8,7 @@ import EventRecord from '@/components/EventRecord.vue'
 import StoreSection from '@/components/StoreSection.vue'
 import QASection from '@/components/QASection.vue'
 import Footer from '@/components/Footer.vue'
+import GoToTop from '@/components/GoToTop.vue'
 </script>
 
 <template>
@@ -21,6 +22,7 @@ import Footer from '@/components/Footer.vue'
     <StoreSection />
     <QASection />
     <Footer />
+    <GoToTop />
   </div>
 </template>
 
