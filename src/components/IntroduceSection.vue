@@ -23,7 +23,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-moisten-light-green relative wave-bg px-4 xl:px-0">
+  <div
+    id="introduce-section"
+    class="bg-moisten-light-green relative wave-bg px-4 xl:px-0 scroll-mt-[100px]"
+  >
     <div class="max-w-7xl mx-auto pt-[45px] pb-[45px] xl:pt-[110px] xl:pb-[120px] relative">
       <div
         class="hidden md:block absolute top-[110px] right-0 w-[155px] h-[155px] border border-t-white border-r-white border-b-0 border-l-0"

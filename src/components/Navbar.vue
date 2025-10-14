@@ -2,12 +2,32 @@
 import { ref, watch } from 'vue'
 import SmallMenu from '@/components/SmallMenu.vue'
 
-const navItems = ref(['關於我們', '我們目標', '活動紀錄', '商店', '常見問題', '聯絡我們'])
+const navItems = ref([
+  { text: '關於我們', target: 'introduce-section' },
+  { text: '我們目標', target: 'goals-section' },
+  { text: '活動紀錄', target: 'event-section' },
+  { text: '商店', target: 'store-section' },
+  { text: '常見問題', target: 'qa-section' },
+  { text: '聯絡我們', target: 'contact-section' },
+])
 
 const oepnMenu = ref(false)
 
 const toggleMenu = () => {
   oepnMenu.value = !oepnMenu.value
+}
+
+// 滾動到指定 section
+const scrollToSection = (targetId) => {
+  const element = document.getElementById(targetId)
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }
+  // 關閉手機選單
+  oepnMenu.value = false
 }
 
 // 用 watch 監聽選單狀態變化
@@ -26,8 +46,9 @@ watch(oepnMenu, (newVal) => {
       <span
         v-for="(item, index) in navItems"
         :key="index"
+        @click="scrollToSection(item.target)"
         class="text-white opacity-100 cursor-pointer font-bold text-lg hover:text-moisten-orange"
-        >{{ item }}</span
+        >{{ item.text }}</span
       >
     </div>
   </nav>
@@ -38,5 +59,5 @@ watch(oepnMenu, (newVal) => {
       :class="oepnMenu ? 'ri-close-line text-moisten-text' : 'ri-menu-line'"
     ></i>
   </nav>
-  <SmallMenu v-if="oepnMenu" :navItems="navItems" />
+  <SmallMenu v-if="oepnMenu" :navItems="navItems" @scroll-to="scrollToSection" />
 </template>

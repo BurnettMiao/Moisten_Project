@@ -48,7 +48,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-moisten-white">
+  <div id="goals-section" class="bg-moisten-white scroll-mt-[100px]">
     <div class="max-w-7xl mx-auto pt-[55px] pb-[75px] xl:pt-[75px] xl:pb-[110px] px-4 xl:px-0">
       <SectionTitle>我們目標</SectionTitle>
 

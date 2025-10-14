@@ -24,7 +24,8 @@ const qaInfo = ref([
 </script>
 <template>
   <div
-    class="bg-moisten-white max-w-[1064px] mx-auto pt-0 xl:pt-[55px] pb-[55px] xl:pb-[110px] flex flex-col xl:flex-row items-stretch justify-between gap-0 xl:gap-10 px-4 xl:px-0"
+    id="qa-section"
+    class="bg-moisten-white max-w-[1064px] mx-auto pt-0 xl:pt-[55px] pb-[55px] xl:pb-[110px] flex flex-col xl:flex-row items-stretch justify-between gap-0 xl:gap-10 px-4 xl:px-0 scroll-mt-[100px]"
   >
     <div class="h-auto flex flex-col items-start xl:items-end justify-between gap-5">
       <SectionTitle>常見問題</SectionTitle>

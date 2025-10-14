@@ -70,7 +70,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="bg-moisten-light-green/50">
+  <div id="event-section" class="bg-moisten-light-green/50 scroll-mt-[100px]">
     <div class="max-w-7xl mx-auto pt-[55px] pb-[55px] xl:pt-[65px] xl:pb-[85px] px-4 xl:px-0">
       <div class="w-full flex items-center justify-between">
         <SectionTitle>活動紀錄</SectionTitle>

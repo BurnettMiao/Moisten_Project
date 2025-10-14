@@ -1,6 +1,9 @@
 <script setup></script>
 <template>
-  <div class="bg-moisten-orange pt-[55px] pb-[35px] text-white px-4 xl:px-0">
+  <div
+    id="contact-section"
+    class="bg-moisten-orange pt-[55px] pb-[35px] text-white px-4 xl:px-0 scroll-mt-[100px]"
+  >
     <div class="max-w-7xl mx-auto flex flex-wrap gap-12 xl:gap-6 items-stretch justify-between">
       <div class="flex flex-col items-stretch justify-between gap-8 xl:gap-0">
         <div class="font-bold text-[40px] leading-10">Moisten</div>
