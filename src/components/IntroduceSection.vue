@@ -58,7 +58,7 @@ onMounted(() => {
           <div class="text-white text-xl">
             <div>我們從一間小小的公寓廚房出發，</div>
             <div>邀請你透過味覺與感官，</div>
-            <div>重新看見生活裡那些被忽略的關係與議題。</div>
+            <div class="pr-5 sm:pr-0">重新看見生活裡那些被忽略的關係與議題。</div>
             <div class="pt-[28px]">關於土地、飲食、身體，與我們自己。</div>
           </div>
 
