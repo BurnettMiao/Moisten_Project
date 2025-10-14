@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue'
+import ScrollReveal from 'scrollreveal'
 const props = defineProps({
   qaInfo: {
     type: Array,
@@ -13,18 +14,43 @@ const initIsOpen = () => {
   isOpen.value = props.qaInfo.map((_, idx) => idx === 0)
 }
 
-onMounted(initIsOpen)
-
-watch(() => props.qaInfo, initIsOpen, { immediate: true })
-
 const toggleOpen = (index) => {
   isOpen.value[index] = !isOpen.value[index]
 }
+
+const scrollRevealOption = {
+  distance: '50px',
+  origin: 'bottom',
+  duration: 1000,
+}
+
+onMounted(() => {
+  initIsOpen()
+
+  ScrollReveal().reveal('.qa-1', {
+    ...scrollRevealOption,
+    origin: 'right',
+    delay: 500,
+  })
+  ScrollReveal().reveal('.qa-2', {
+    ...scrollRevealOption,
+    origin: 'right',
+    delay: 1000,
+  })
+  ScrollReveal().reveal('.qa-3', {
+    ...scrollRevealOption,
+    origin: 'right',
+    delay: 1500,
+  })
+})
+
+watch(() => props.qaInfo, initIsOpen, { immediate: true })
 </script>
 <template>
   <div
     v-for="(item, itemIndex) in props.qaInfo"
     class="w-full px-[25px] py-[20px] shadow-md flex flex-col gap-2"
+    :class="`qa-${itemIndex + 1}`"
     :key="itemIndex"
   >
     <div

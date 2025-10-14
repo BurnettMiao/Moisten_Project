@@ -1,7 +1,8 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import SectionTitle from '@/components/SectionTitle.vue'
 import EventCard from '@/components/EventCard.vue'
+import ScrollReveal from 'scrollreveal'
 
 const eventCardsInfo = ref([
   {
@@ -53,6 +54,19 @@ const handleNextSlide = () => {
     console.log('eventCardRef.value is null')
   }
 }
+
+const scrollRevealOption = {
+  distance: '50px',
+  origin: 'bottom',
+  duration: 1000,
+}
+
+onMounted(() => {
+  ScrollReveal().reveal('.event-card', {
+    ...scrollRevealOption,
+    delay: 500,
+  })
+})
 </script>
 
 <template>
@@ -76,7 +90,7 @@ const handleNextSlide = () => {
         </div>
       </div>
 
-      <EventCard ref="eventCardRef" :eventCardsInfo="eventCardsInfo" />
+      <EventCard class="event-card" ref="eventCardRef" :eventCardsInfo="eventCardsInfo" />
     </div>
   </div>
 </template>

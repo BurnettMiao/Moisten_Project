@@ -26,12 +26,12 @@ onMounted(() => {
   ScrollReveal().reveal('.goals-two-pic', {
     ...scrollRevealOption,
     origin: 'left',
-    delay: 1000,
+    delay: 800,
   })
   ScrollReveal().reveal('.goals-two-card', {
     ...scrollRevealOption,
     origin: 'bottom',
-    delay: 1500,
+    delay: 1100,
   })
 
   // ScrollReveal().reveal('.goals-three-card', {
@@ -42,7 +42,7 @@ onMounted(() => {
   ScrollReveal().reveal('.goals-three-pic', {
     ...scrollRevealOption,
     origin: 'bottom',
-    delay: 1800,
+    delay: 1400,
   })
 })
 </script>
