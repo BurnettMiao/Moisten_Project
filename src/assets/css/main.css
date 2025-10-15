@@ -38,7 +38,7 @@
 
 html,
 body {
-  font-family: 'Libre Baskerville', sans-serif;
+  font-family: 'Libre Baskerville', serif;
   background-color: var(--color-moisten-white);
   color: var(--color-moisten-text);
 }

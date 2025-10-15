@@ -19,6 +19,10 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .title-dot {
+    font-family: 'Libre Baskerville', serif;
+  }
+
   .title-dot::before {
     top: 7px;
   }
