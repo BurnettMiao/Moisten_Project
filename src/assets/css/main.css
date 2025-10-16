@@ -22,9 +22,9 @@
   font-style: normal;
 } */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=+LibreBaskerville:ital,wght@0,400;0,700;1,400&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap'); */
 
 @import 'tailwindcss';
 
@@ -40,7 +40,8 @@
 
 html,
 body {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Libre Baskerville', serif;
+  /* font-family: 'Noto Sans TC', sans-serif; */
   background-color: var(--color-moisten-white);
   color: var(--color-moisten-text);
 }

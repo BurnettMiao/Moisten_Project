@@ -68,7 +68,7 @@ const modules = [Pagination, Autoplay]
 
 <style scoped>
 .hero-text {
-  font-family: inter, sans-serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 :deep(.swiper-pagination-bullet) {
