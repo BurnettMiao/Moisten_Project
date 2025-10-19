@@ -59,7 +59,7 @@ const modules = [Pagination, Autoplay]
         />
       </video>
       <span
-        class="absolute top-1/2 left-1/2 z-10 text-[64px] xl:text-8xl text-white font-bold opacity-90 -translate-x-1/2 -translate-y-1/2 hero-text"
+        class="absolute top-1/2 left-1/2 z-10 text-[64px] xl:text-8xl text-white font-bold opacity-90 -translate-x-1/2 -translate-y-1/2"
         >Moisten</span
       >
     </swiper-slide>
@@ -68,7 +68,7 @@ const modules = [Pagination, Autoplay]
 
 <style scoped>
 .hero-text {
-  font-family: 'Libre Baskerville', serif;
+  font-family: var(--font-moisten-libre-baskerville);
 }
 
 :deep(.swiper-pagination-bullet) {

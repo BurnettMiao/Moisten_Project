@@ -60,7 +60,7 @@ onMounted(() => {
             <div class="relative w-full xl:w-[380px] bg-moisten-white z-10">
               <div class="px-[15px] xl:px-[32px] py-[30px] flex flex-col gap-4">
                 <div>
-                  <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold">
+                  <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold golds-title">
                     關注在地社會議題
                   </div>
                   <div class="text-lg">小資廚房進化中...</div>
@@ -109,7 +109,7 @@ onMounted(() => {
             >
               <div class="px-[15px] xl:px-[32px] py-[30px] flex flex-col gap-4">
                 <div>
-                  <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold">
+                  <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold golds-title">
                     符合道德的材料
                   </div>
                   <div class="text-lg">追尋日本宇治茶的來源，建立產地來源的新關係。</div>
@@ -134,7 +134,7 @@ onMounted(() => {
             <div class="relative w-full xl:w-[380px] bg-moisten-white z-10">
               <div class="px-[15px] xl:px-[32px] py-[30px] flex flex-col gap-4">
                 <div>
-                  <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold">
+                  <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold golds-title">
                     環境永續
                   </div>
                   <div class="text-lg">除了活動設計，我們正在學習更永續的環境議題。</div>
@@ -170,3 +170,11 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.golds-title {
+  font-family: var(--font-moisten-libre-baskerville);
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+</style>

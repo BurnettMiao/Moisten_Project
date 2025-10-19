@@ -54,8 +54,8 @@ onMounted(() => {
           />
         </div>
 
-        <div class="introduce-content flex-1 flex items-start flex-col gap-[35px] xl:self-end">
-          <div class="text-white text-xl">
+        <div class="flex-1 flex items-start flex-col gap-[35px] xl:self-end">
+          <div class="text-white text-xl introduce-content">
             <div>我們從一間小小的公寓廚房出發，</div>
             <div>邀請你透過味覺與感官，</div>
             <div class="pr-5 sm:pr-0">重新看見生活裡那些被忽略的關係與議題。</div>
@@ -74,6 +74,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.introduce-content {
+  font-family: var(--font-moisten-libre-baskerville);
+}
+
 .wave-bg::before {
   content: '';
   position: absolute;

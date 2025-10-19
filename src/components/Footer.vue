@@ -45,3 +45,9 @@
     <div class="text-sm text-center mt-[55px]">Copyright © 2025 Moisten. All rights reserved.</div>
   </div>
 </template>
+
+<style scoped>
+#contact-section {
+  font-family: var(--font-moisten-libre-baskerville);
+}
+</style>
