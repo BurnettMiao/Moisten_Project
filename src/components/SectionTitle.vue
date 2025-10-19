@@ -11,7 +11,7 @@
   content: '';
   position: absolute;
   display: block;
-  top: 3px;
+  top: 5px;
   left: 0;
   height: 15px;
   width: 15px;
