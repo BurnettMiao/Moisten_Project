@@ -1,7 +1,33 @@
 <script setup>
 import { onMounted } from 'vue'
-import BottomOne from '@/components/BottomOne.vue'
+import LearnMoreButton from '@/components/LearnMoreButton.vue'
 import ScrollReveal from 'scrollreveal'
+
+// 請在此處加入圖片連結文字 ↓↓↓↓↓
+const introduce = {
+  img: 'https://images.unsplash.com/photo-1632657583981-938d58b18b09?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  title: '從餐桌出發，回到生活',
+  content: [
+    {
+      hasTopSpace: false,
+      text: '我們從一間小小的公寓廚房出發，',
+    },
+    {
+      hasTopSpace: false,
+      text: '邀請你透過味覺與感官，',
+    },
+    {
+      hasTopSpace: false,
+      text: '重新看見生活裡那些被忽略的關係與議題。',
+    },
+    // 跟上方文字需要有點空間請把 hasTopSpace 變成 true 否則一率建議為 false
+    {
+      hasTopSpace: true,
+      text: '關於土地、飲食、身體，與我們自己。',
+    },
+  ],
+}
+// 請在此處加入圖片連結及文字 ↑↑↑↑↑
 
 const scrollRevealOption = {
   distance: '50px',
@@ -38,7 +64,7 @@ onMounted(() => {
       </div>
 
       <h2 class="moisten-text text-[26px] xl:text-4xl font-bold text-center xl:text-left">
-        從餐桌出發，回到生活
+        {{ introduce.title }}
       </h2>
 
       <div
@@ -47,26 +73,25 @@ onMounted(() => {
         <div
           class="introduce-img max-w-[630px] max-h-[478px] flex items-center justify-center rounded-xl overflow-hidden"
         >
-          <img
-            class="object-cover"
-            src="https://images.unsplash.com/photo-1632657583981-938d58b18b09?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt=""
-          />
+          <img class="object-cover" :src="introduce.img" alt="" />
         </div>
 
         <div class="flex-1 flex items-start flex-col gap-[35px] xl:self-end">
           <div class="text-white text-xl introduce-content">
-            <div>我們從一間小小的公寓廚房出發，</div>
-            <div>邀請你透過味覺與感官，</div>
-            <div class="pr-5 sm:pr-0">重新看見生活裡那些被忽略的關係與議題。</div>
-            <div class="pt-[28px]">關於土地、飲食、身體，與我們自己。</div>
+            <div
+              v-for="(item, index) in introduce.content"
+              :key="index"
+              :class="{ 'pt-[28px]': item.hasTopSpace }"
+            >
+              {{ item.text }}
+            </div>
           </div>
 
           <div
             class="h-[105px] border border-t-0 border-r-0 border-b-0 border-l-white ml-4 xl:ml-0"
           ></div>
 
-          <BottomOne />
+          <LearnMoreButton />
         </div>
       </div>
     </div>
