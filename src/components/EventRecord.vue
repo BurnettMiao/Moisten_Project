@@ -4,32 +4,37 @@ import SectionTitle from '@/components/SectionTitle.vue'
 import EventCard from '@/components/EventCard.vue'
 import ScrollReveal from 'scrollreveal'
 
-const eventCardsInfo = ref([
-  {
-    img: 'https://images.unsplash.com/photo-1516382461343-35e1ba016e01?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    year: '2019',
-    title: '風格市集擺攤',
-    lable: '二手市集、、跳蚤市場',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1556442281-77c90134c61f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    year: '2021',
-    title: '蜜桃釀酒',
-    lable: '節氣活動',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1592417817038-d13fd7342605?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740',
-    year: '2025',
-    title: 'Moisten',
-    lable: '浸潤茶葉佐餐',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1556442281-77c90134c61f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    year: '2021',
-    title: '蜜桃釀酒',
-    lable: '節氣活動',
-  },
-])
+// 請在此處加入圖片連結文字 ↓↓↓↓↓
+const eventCardsInfo = ref({
+  title: '活動紀錄',
+  cardContent: [
+    {
+      img: 'https://images.unsplash.com/photo-1516382461343-35e1ba016e01?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      year: '2019',
+      title: '風格市集擺攤',
+      lable: '二手市集、、跳蚤市場',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1556442281-77c90134c61f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      year: '2021',
+      title: '蜜桃釀酒',
+      lable: '節氣活動',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1592417817038-d13fd7342605?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740',
+      year: '2025',
+      title: 'Moisten',
+      lable: '浸潤茶葉佐餐',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1556442281-77c90134c61f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      year: '2021',
+      title: '蜜桃釀酒',
+      lable: '節氣活動',
+    },
+  ],
+})
+// 請在此處加入圖片連結及文字 ↑↑↑↑↑
 
 const eventCardRef = ref(null)
 
@@ -73,7 +78,7 @@ onMounted(() => {
   <div id="event-section" class="bg-moisten-light-green/50 scroll-mt-[100px]">
     <div class="max-w-7xl mx-auto pt-[55px] pb-[55px] xl:pt-[65px] xl:pb-[85px] px-4 xl:px-0">
       <div class="w-full flex items-center justify-between">
-        <SectionTitle>活動紀錄</SectionTitle>
+        <SectionTitle>{{ eventCardsInfo.title }}</SectionTitle>
         <div class="hidden lg:flex items-center justify-center gap-[17px]">
           <div
             @click="handlePrevSlide"
@@ -90,7 +95,11 @@ onMounted(() => {
         </div>
       </div>
 
-      <EventCard class="event-card" ref="eventCardRef" :eventCardsInfo="eventCardsInfo" />
+      <EventCard
+        class="event-card"
+        ref="eventCardRef"
+        :eventCardsInfo="eventCardsInfo.cardContent"
+      />
     </div>
   </div>
 </template>

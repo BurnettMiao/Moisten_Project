@@ -1,4 +1,14 @@
-<script setup></script>
+<script setup>
+// 請在此處加入圖片連結文字 ↓↓↓↓↓
+const store = {
+  title: 'Vist Our Store',
+  img: 'https://raw.githubusercontent.com/BurnettMiao/Moisten_Project/refs/heads/main/src/assets/img/StoreSection.jpg',
+  link: 'https://www.google.com.tw',
+  linkText: '即刻前往',
+}
+// 請在此處加入圖片連結及文字 ↑↑↑↑↑
+</script>
+
 <template>
   <div
     id="store-section"
@@ -6,19 +16,21 @@
   >
     <img
       class="absolute top-0 left-0 w-full h-full object-cover object-center"
-      src="../assets/img/StoreSection.jpg"
+      :src="store.img"
       alt=""
     />
 
     <div
       class="relative z-10 flex flex-col items-center justify-center gap-[25px] py-[112px] store-content"
     >
-      <div class="text-[30px] xl:text-4xl text-white font-bold">Vist Our Store</div>
-      <div
+      <div class="text-[30px] xl:text-4xl text-white font-bold">{{ store.title }}</div>
+      <a
+        :href="store.link"
+        target="_blank"
         class="inline-block px-[25px] py-[16px] border border-white rounded-4xl text-white text-lg xl:text-xl hover:bg-white hover:text-moisten-text duration-500 cursor-pointer"
       >
-        即刻前往
-      </div>
+        {{ store.linkText }}
+      </a>
     </div>
   </div>
 </template>

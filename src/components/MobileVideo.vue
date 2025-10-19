@@ -1,12 +1,13 @@
 <script setup>
+import { ref } from 'vue'
 // 請在此處加入影片連結文字 ↓↓↓↓↓
-const mobileVideo = [
+const mobileVideo = ref([
   // 影片連結及文字寫法
   {
     video: 'https://videos.pexels.com/video-files/3255109/3255109-uhd_2560_1440_25fps.mp4',
     text: 'Moisten',
   },
-]
+])
 // 請在此處加入影片連結及文字 ↑↑↑↑↑
 </script>
 

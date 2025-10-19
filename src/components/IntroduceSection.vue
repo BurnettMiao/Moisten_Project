@@ -1,32 +1,35 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import LearnMoreButton from '@/components/LearnMoreButton.vue'
 import ScrollReveal from 'scrollreveal'
 
 // 請在此處加入圖片連結文字 ↓↓↓↓↓
-const introduce = {
+const introduce = ref({
   img: 'https://images.unsplash.com/photo-1632657583981-938d58b18b09?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   title: '從餐桌出發，回到生活',
   content: [
+    // 第一段
     {
       hasTopSpace: false,
       text: '我們從一間小小的公寓廚房出發，',
     },
+    // 第二段
     {
       hasTopSpace: false,
       text: '邀請你透過味覺與感官，',
     },
+    // 第三段
     {
       hasTopSpace: false,
       text: '重新看見生活裡那些被忽略的關係與議題。',
     },
-    // 跟上方文字需要有點空間請把 hasTopSpace 變成 true 否則一率建議為 false
+    // 第四段（跟上方文字需要有點空間請把 hasTopSpace 變成 true 否則一率建議為 false）
     {
       hasTopSpace: true,
       text: '關於土地、飲食、身體，與我們自己。',
     },
   ],
-}
+})
 // 請在此處加入圖片連結及文字 ↑↑↑↑↑
 
 const scrollRevealOption = {

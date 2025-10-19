@@ -1,10 +1,51 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import ScrollReveal from 'scrollreveal'
 
 import SectionTitle from '@/components/SectionTitle.vue'
 
-const ourGoalsContent = [{}]
+// 請在此處加入圖片連結文字 ↓↓↓↓↓
+const ourGoalsContent = ref({
+  title: '我們目標',
+  cardsOne: {
+    cardTitle: '關注在地社會議題',
+    img: 'https://images.unsplash.com/photo-1472926373053-51b220987527?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    cardTitleDescribe: '小資廚房進化中...',
+    cardContent: [
+      // 第一段
+      '創辦人主修建築，曾於建築師事務所及銀行擔任建築管理相關工作。',
+      // 第二段
+      '因察覺都市冷漠問題及台灣社會住宅發展的遲滯，於2018至2019年間，投入社會議題的提案與行動實驗。',
+      // 第三段
+      '相關後續於2023年完成學術論文撰寫，現階段專注回歸料理領域。',
+    ],
+  },
+  cardsTwo: {
+    cardTitle: '符合道德的材料',
+    img: 'https://images.unsplash.com/photo-1624893464636-c122891445c6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    cardTitleDescribe: '追尋日本宇治茶的來源，建立產地來源的新關係。',
+    cardContent: [
+      // 第一段
+      '2012年負責人在日本和束町，與在地茶農接觸後，注意到茶源鄉的正名運動。',
+      // 第二段
+      '我們決定不只關心味道，並開始注意食材的生命歷程。',
+      // 第三段
+      '道德的材料，不僅是味道上的享受，也是尊重土地、農人與自然的選擇。',
+    ],
+  },
+  cardsThree: {
+    cardTitle: '環境永續',
+    img: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2026&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    cardTitleDescribe: '除了活動設計，我們正在學習更永續的環境議題。',
+    cardContent: [
+      // 第一段
+      '廚房透過活動設計與實驗，以及日常與外界的交流，我們從餐桌出發，探索更永續的循環方式。',
+      // 第二段
+      '2025年起，我們將目光重新聚焦於台灣茶，讓佐餐飲品的選擇更加低碳，實踐在地永續。',
+    ],
+  },
+})
+// 請在此處加入圖片連結及文字 ↑↑↑↑↑
 
 const scrollRevealOption = {
   distance: '50px',
@@ -50,28 +91,27 @@ onMounted(() => {
 <template>
   <div id="goals-section" class="bg-moisten-white scroll-mt-[100px]">
     <div class="max-w-7xl mx-auto pt-[55px] pb-[75px] xl:pt-[75px] xl:pb-[110px] px-4 xl:px-0">
-      <SectionTitle>我們目標</SectionTitle>
+      <SectionTitle>{{ ourGoalsContent.title }}</SectionTitle>
 
       <div
         class="goals-one-card mt-10 xl:mt-15 flex flex-col items-center justify-around gap-13 xl:gap-20 max-w-[640px] xl:max-w-full mx-auto"
       >
+        <!-- 第一張 Card -->
         <div class="flex flex-col-reverse xl:flex-row items-center justify-center">
           <div class="relative left-0 xl:left-[18px] w-full xl:max-w-[355px]">
             <div class="relative w-full xl:w-[380px] bg-moisten-white z-10">
               <div class="px-[15px] xl:px-[32px] py-[30px] flex flex-col gap-4">
                 <div>
                   <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold golds-title">
-                    關注在地社會議題
+                    {{ ourGoalsContent.cardsOne.cardTitle }}
                   </div>
-                  <div class="text-lg">小資廚房進化中...</div>
+                  <div class="text-lg">{{ ourGoalsContent.cardsOne.cardTitleDescribe }}</div>
                 </div>
                 <div class="w-full h-[1px] bg-moisten-text"></div>
                 <div class="text-lg flex flex-col gap-5">
-                  <div>創辦人主修建築，曾於建築師事務所及銀行擔任建築管理相關工作。</div>
-                  <div>
-                    因察覺都市冷漠問題及台灣社會住宅發展的遲滯，於2018至2019年間，投入社會議題的提案與行動實驗。
+                  <div v-for="(item, index) in ourGoalsContent.cardsOne.cardContent" :key="index">
+                    {{ item }}
                   </div>
-                  <div>相關後續於2023年完成學術論文撰寫，現階段專注回歸料理領域。</div>
                 </div>
               </div>
             </div>
@@ -86,12 +126,13 @@ onMounted(() => {
           >
             <img
               class="w-full h-full object-cover object-center"
-              src="https://images.unsplash.com/photo-1472926373053-51b220987527?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              :src="ourGoalsContent.cardsOne.img"
               alt=""
             />
           </div>
         </div>
 
+        <!-- 第二張 Card -->
         <div class="flex items-center justify-center flex-col xl:flex-row">
           <div
             class="goals-two-pic max-w-[630px] xl:max-w-[925px] max-h-[485px] overflow-hidden rounded-2xl relative"
@@ -110,15 +151,15 @@ onMounted(() => {
               <div class="px-[15px] xl:px-[32px] py-[30px] flex flex-col gap-4">
                 <div>
                   <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold golds-title">
-                    符合道德的材料
+                    {{ ourGoalsContent.cardsTwo.cardTitle }}
                   </div>
-                  <div class="text-lg">追尋日本宇治茶的來源，建立產地來源的新關係。</div>
+                  <div class="text-lg">{{ ourGoalsContent.cardsTwo.cardTitleDescribe }}</div>
                 </div>
                 <div class="w-full h-[1px] bg-moisten-text"></div>
                 <div class="text-lg flex flex-col gap-5">
-                  <div>2012年負責人在日本和束町，與在地茶農接觸後，注意到茶源鄉的正名運動。</div>
-                  <div>我們決定不只關心味道，並開始注意食材的生命歷程。</div>
-                  <div>道德的材料，不僅是味道上的享受，也是尊重土地、農人與自然的選擇。</div>
+                  <div v-for="(item, index) in ourGoalsContent.cardsTwo.cardContent" :key="index">
+                    {{ item }}
+                  </div>
                 </div>
               </div>
             </div>
@@ -129,23 +170,21 @@ onMounted(() => {
           </div>
         </div>
 
+        <!-- 第三張 Card -->
         <div class="flex items-center justify-center flex-col-reverse xl:flex-row">
           <div class="goals-three-card relative xl-left-0 xl:left-[18px] w-full xl:max-w-[355px]">
             <div class="relative w-full xl:w-[380px] bg-moisten-white z-10">
               <div class="px-[15px] xl:px-[32px] py-[30px] flex flex-col gap-4">
                 <div>
                   <div class="text-[24px] xl:text-[26px] text-moisten-green font-bold golds-title">
-                    環境永續
+                    {{ ourGoalsContent.cardsThree.cardTitle }}
                   </div>
-                  <div class="text-lg">除了活動設計，我們正在學習更永續的環境議題。</div>
+                  <div class="text-lg">{{ ourGoalsContent.cardsThree.cardTitleDescribe }}</div>
                 </div>
                 <div class="w-full h-[1px] bg-moisten-text"></div>
                 <div class="text-lg flex flex-col gap-5">
-                  <div>
-                    廚房透過活動設計與實驗，以及日常與外界的交流，我們從餐桌出發，探索更永續的循環方式。
-                  </div>
-                  <div>
-                    2025年起，我們將目光重新聚焦於台灣茶，讓佐餐飲品的選擇更加低碳，實踐在地永續。
+                  <div v-for="(item, index) in ourGoalsContent.cardsThree.cardContent" :key="index">
+                    {{ item }}
                   </div>
                 </div>
               </div>
