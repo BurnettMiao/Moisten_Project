@@ -53,7 +53,7 @@ watch(oepnMenu, (newVal) => {
     </div>
   </nav>
 
-  <nav @click="toggleMenu" class="fixed block md:hidden top-5 right-5 text-white z-50">
+  <nav @click="toggleMenu" class="fixed block md:hidden top-5 right-5 text-white z-90">
     <i
       class="text-3xl cursor-pointer"
       :class="oepnMenu ? 'ri-close-line text-moisten-text' : 'ri-menu-line'"

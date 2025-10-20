@@ -14,7 +14,7 @@ const handleClick = (targetId) => {
 </script>
 <template>
   <div
-    class="fixed block md:hidden bg-moisten-white px-4 top-0 left-0 w-full h-screen pt-[90px] z-40"
+    class="fixed block md:hidden bg-moisten-white px-4 top-0 left-0 w-full h-screen pt-[90px] z-80"
   >
     <div v-for="(item, itemIndex) in props.navItems" :key="itemIndex">
       <div
