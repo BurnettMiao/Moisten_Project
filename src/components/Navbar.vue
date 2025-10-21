@@ -1,6 +1,6 @@
 <script setup>
 import { ref, watch } from 'vue'
-import SmallMenu from '@/components/SmallMenu.vue'
+import SmallMenu from '@/components/utility/SmallMenu.vue'
 
 // 請在此處加入圖片連結文字 ↓↓↓↓↓
 const navItems = ref([

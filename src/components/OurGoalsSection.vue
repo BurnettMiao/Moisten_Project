@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 import ScrollReveal from 'scrollreveal'
 
-import SectionTitle from '@/components/SectionTitle.vue'
+import SectionTitle from '@/components/utility/SectionTitle.vue'
 
 // 請在此處加入圖片連結文字 ↓↓↓↓↓
 const ourGoalsContent = ref({

@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-import SectionTitle from '@/components/SectionTitle.vue'
-import QADisplayContent from '@/components/QADisplayContent.vue'
+import SectionTitle from '@/components/utility/SectionTitle.vue'
+import QADisplayContent from '@/components/utility/QADisplayContent.vue'
 // 請在此處加入文字 ↓↓↓↓↓
 const qaInfo = ref({
   title: '常見問題',

@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue'
-import LearnMoreButton from '@/components/LearnMoreButton.vue'
+import LearnMoreButton from '@/components/utility/LearnMoreButton.vue'
 import ScrollReveal from 'scrollreveal'
 
 // 請在此處加入圖片連結文字 ↓↓↓↓↓

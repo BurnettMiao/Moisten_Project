@@ -8,7 +8,7 @@ import EventRecord from '@/components/EventRecord.vue'
 import StoreSection from '@/components/StoreSection.vue'
 import QASection from '@/components/QASection.vue'
 import Footer from '@/components/Footer.vue'
-import GoToTop from '@/components/GoToTop.vue'
+import GoToTop from '@/components/utility/GoToTop.vue'
 </script>
 
 <template>

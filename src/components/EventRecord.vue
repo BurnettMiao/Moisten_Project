@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import SectionTitle from '@/components/SectionTitle.vue'
-import EventCard from '@/components/EventCard.vue'
+import SectionTitle from '@/components/utility/SectionTitle.vue'
+import EventCard from '@/components/utility/EventCard.vue'
 import ScrollReveal from 'scrollreveal'
 
 // 請在此處加入圖片連結文字 ↓↓↓↓↓
