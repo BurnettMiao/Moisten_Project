@@ -3,7 +3,7 @@ import { onMounted, ref } from 'vue'
 import LearnMoreButton from '@/components/utility/LearnMoreButton.vue'
 import ScrollReveal from 'scrollreveal'
 
-// 請在此處加入圖片連結文字 ↓↓↓↓↓
+// Introduce Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 const introduce = ref({
   img: 'https://images.unsplash.com/photo-1632657583981-938d58b18b09?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   title: '從餐桌出發，回到生活',
@@ -30,7 +30,7 @@ const introduce = ref({
     },
   ],
 })
-// 請在此處加入圖片連結及文字 ↑↑↑↑↑
+// Introduce Section 請在此處加入圖片連結及文字 ↑↑↑↑↑
 
 const scrollRevealOption = {
   distance: '50px',

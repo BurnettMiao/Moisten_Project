@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 import qrCodeImg from '@/assets/img/qrCode.svg'
 
-// 請在此處加入圖片連結文字 ↓↓↓↓↓
+// Footer Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 const footer = ref({
   logo: 'Moisten',
   igLink: 'https://www.instagram.com/frau_aus_tee/',
@@ -30,7 +30,7 @@ const footer = ref({
   qrCode: qrCodeImg,
   footer: 'Copyright © 2025 Moisten. All rights reserved.',
 })
-// 請在此處加入圖片連結及文字 ↑↑↑↑↑
+// Footer Section 請在此處加入圖片連結及文字 ↑↑↑↑↑
 </script>
 
 <template>

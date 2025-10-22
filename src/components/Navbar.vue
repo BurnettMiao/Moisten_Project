@@ -2,7 +2,7 @@
 import { ref, watch } from 'vue'
 import SmallMenu from '@/components/utility/SmallMenu.vue'
 
-// 請在此處加入圖片連結文字 ↓↓↓↓↓
+// Navbar Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 const navItems = ref([
   { text: '關於我們', target: 'introduce-section' },
   { text: '我們目標', target: 'goals-section' },
@@ -11,7 +11,7 @@ const navItems = ref([
   { text: '常見問題', target: 'qa-section' },
   { text: '聯絡我們', target: 'contact-section' },
 ])
-// 請在此處加入圖片連結文字 ↑↑↑↑↑
+// Navbar Section 請在此處加入圖片連結文字 ↑↑↑↑↑
 
 const oepnMenu = ref(false)
 

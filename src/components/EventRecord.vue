@@ -4,7 +4,7 @@ import SectionTitle from '@/components/utility/SectionTitle.vue'
 import EventCard from '@/components/utility/EventCard.vue'
 import ScrollReveal from 'scrollreveal'
 
-// 請在此處加入圖片連結文字 ↓↓↓↓↓
+// Event Record Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 const eventCardsInfo = ref({
   title: '活動紀錄',
   cardContent: [
@@ -34,7 +34,7 @@ const eventCardsInfo = ref({
     },
   ],
 })
-// 請在此處加入圖片連結及文字 ↑↑↑↑↑
+// Event Record Section 請在此處加入圖片連結及文字 ↑↑↑↑↑
 
 const eventCardRef = ref(null)
 

@@ -4,7 +4,7 @@ import ScrollReveal from 'scrollreveal'
 
 import SectionTitle from '@/components/utility/SectionTitle.vue'
 
-// 請在此處加入圖片連結文字 ↓↓↓↓↓
+// Our Goals Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 const ourGoalsContent = ref({
   title: '我們目標',
   cardsOne: {
@@ -45,7 +45,7 @@ const ourGoalsContent = ref({
     ],
   },
 })
-// 請在此處加入圖片連結及文字 ↑↑↑↑↑
+// Our Goals Section 請在此處加入圖片連結及文字 ↑↑↑↑↑
 
 const scrollRevealOption = {
   distance: '50px',

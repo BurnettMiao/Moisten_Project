@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-// 請在此處加入圖片連結，影片連結及文字 ↓↓↓↓↓
+// Hero Section 請在此處加入圖片連結，影片連結及文字 ↓↓↓↓↓
 const imgAndTextArr = ref([
   // 圖片連結及文字寫法
   {
@@ -18,7 +18,7 @@ const imgAndTextArr = ref([
     text: 'Moisten',
   },
 ])
-// 請在此處加入圖片連結，影片連結及文字 ↑↑↑↑↑
+// Hero Section 請在此處加入圖片連結，影片連結及文字 ↑↑↑↑↑
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue'

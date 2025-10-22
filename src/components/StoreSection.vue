@@ -1,12 +1,12 @@
 <script setup>
-// 請在此處加入圖片連結文字 ↓↓↓↓↓
+// Store Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 const store = {
   title: 'Vist Our Store',
   img: 'https://raw.githubusercontent.com/BurnettMiao/Moisten_Project/refs/heads/main/src/assets/img/StoreSection.jpg',
   link: 'https://www.google.com.tw',
   linkText: '即刻前往',
 }
-// 請在此處加入圖片連結及文字 ↑↑↑↑↑
+// Store Section 請在此處加入圖片連結及文字 ↑↑↑↑↑
 </script>
 
 <template>

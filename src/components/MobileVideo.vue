@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-// 請在此處加入影片連結文字 ↓↓↓↓↓
+// Mobile Video Section 請在此處加入影片連結文字 ↓↓↓↓↓
 const mobileVideo = ref([
   // 影片連結及文字寫法
   {
@@ -8,7 +8,7 @@ const mobileVideo = ref([
     text: 'Moisten',
   },
 ])
-// 請在此處加入影片連結及文字 ↑↑↑↑↑
+// Mobile Video Section 請在此處加入影片連結及文字 ↑↑↑↑↑
 </script>
 
 <template>
