@@ -17,7 +17,7 @@ const eventCardsInfo = ref({
       img: evnet0101Img,
       year: '2018',
       lable: '北市社宅青創團隊',
-      title: '兒少家庭_野餐Pizza',
+      title: '野餐Pizza',
     },
     {
       img: evnet0201Img,
