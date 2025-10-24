@@ -3,11 +3,13 @@ import { ref } from 'vue'
 import moistenLogo from '@/assets/img/moisten_logo_213x96.png'
 
 // Mobile Video Section 請在此處加入影片連結文字 ↓↓↓↓↓
+import moistenVideo from '@/assets/video/ScreenRecording_09-13-2025 23-40-15_1.mp4'
+
 const mobileVideo = ref([
   // 影片連結及文字寫法
   {
-    video: 'https://videos.pexels.com/video-files/3255109/3255109-uhd_2560_1440_25fps.mp4',
-    text: 'Moisten',
+    video: moistenVideo,
+    // logo: moistenLogo,
   },
 ])
 // Mobile Video Section 請在此處加入影片連結及文字 ↑↑↑↑↑
@@ -19,9 +21,9 @@ const mobileVideo = ref([
       <video autoplay loop muted playsinline class="w-full h-full object-cover object-center">
         <source :src="item.video" type="video/mp4" />
       </video>
-      <span class="absolute top-1/2 left-1/2 z-10 opacity-90 -translate-x-1/2 -translate-y-1/2">
-        <img :src="moistenLogo" alt="" />
-      </span>
+      <!-- <span class="absolute top-1/2 left-1/2 z-10 opacity-90 -translate-x-1/2 -translate-y-1/2">
+        <img :src="item.logo" alt="" />
+      </span> -->
     </div>
   </div>
 </template>
