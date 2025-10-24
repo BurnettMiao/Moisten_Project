@@ -27,7 +27,7 @@ const onSwiper = (swiper) => {
 // 暴露方法給父組件
 defineExpose({
   slidePrev: () => {
-    console.log('slidePrev called, swiperInstance:', swiperInstance.value)
+    // console.log('slidePrev called, swiperInstance:', swiperInstance.value)
     if (swiperInstance.value) {
       swiperInstance.value.slidePrev()
     } else {
