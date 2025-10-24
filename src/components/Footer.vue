@@ -1,11 +1,11 @@
 <script setup>
 import { ref } from 'vue'
 
+import moistenLogoSmall from '@/assets/img/moisten_logo_133x40.png'
 import qrCodeImg from '@/assets/img/qrCode.svg'
 
 // Footer Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 const footer = ref({
-  logo: 'Moisten',
   igLink: 'https://www.instagram.com/frau_aus_tee/',
   fbLink: 'https://www.instagram.com/frau_aus_tee/',
   aboutUs: {
@@ -40,7 +40,9 @@ const footer = ref({
   >
     <div class="max-w-7xl mx-auto flex flex-wrap gap-12 xl:gap-6 items-stretch justify-between">
       <div class="flex flex-col items-stretch justify-between gap-8 xl:gap-0">
-        <div class="font-bold text-[40px] leading-10">{{ footer.logo }}</div>
+        <div class="max-w-[133px]">
+          <img :src="moistenLogoSmall" class="w-full h-full" alt="" />
+        </div>
 
         <div class="flex items-center gap-2">
           <a :href="footer.igLink" target="_blank"
