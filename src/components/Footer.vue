@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue'
 
+// Footer Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 import moistenLogoSmall from '@/assets/img/moisten_logo_133x40.png'
 import qrCodeImg from '@/assets/img/qrCode.svg'
 
-// Footer Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 const footer = ref({
   igLink: 'https://www.instagram.com/frau_aus_tee/',
   fbLink: 'https://www.instagram.com/frau_aus_tee/',
