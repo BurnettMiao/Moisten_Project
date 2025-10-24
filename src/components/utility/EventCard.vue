@@ -20,7 +20,7 @@ const swiperRef = ref(null)
 const swiperInstance = ref(null)
 
 const onSwiper = (swiper) => {
-  console.log('onSwiper called:', swiper)
+  // console.log('onSwiper called:', swiper)
   swiperInstance.value = swiper
 }
 
@@ -35,7 +35,7 @@ defineExpose({
     }
   },
   slideNext: () => {
-    console.log('slideNext called, swiperInstance:', swiperInstance.value)
+    // console.log('slideNext called, swiperInstance:', swiperInstance.value)
     if (swiperInstance.value) {
       swiperInstance.value.slideNext()
     } else {
@@ -75,8 +75,8 @@ defineExpose({
         </div>
 
         <div class="flex flex-col items-end">
-          <div class="text-[14px] text-moisten-text-gary">{{ item.lable }}</div>
-          <div class="text-[26px] font-bold text-moisten-text">{{ item.title }}</div>
+          <div class="text-right text-[14px] text-moisten-text-gary">{{ item.lable }}</div>
+          <div class="text-right text-[26px] font-bold text-moisten-text">{{ item.title }}</div>
         </div>
       </div>
     </swiper-slide>

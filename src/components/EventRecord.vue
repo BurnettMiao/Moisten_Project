@@ -5,32 +5,37 @@ import EventCard from '@/components/utility/EventCard.vue'
 import ScrollReveal from 'scrollreveal'
 
 // Event Record Section 請在此處加入圖片連結文字 ↓↓↓↓↓
+import evnet0101Img from '@/assets/img/01/9137383133475.jpg'
+import evnet0201Img from '@/assets/img/02/9119659557554.jpg'
+import evnet0301Img from '@/assets/img/03/IMG_7505.JPG'
+import evnet0401Img from '@/assets/img/04/9137382466766.jpg'
+
 const eventCardsInfo = ref({
   title: '活動紀錄',
   cardContent: [
     {
-      img: 'https://images.unsplash.com/photo-1516382461343-35e1ba016e01?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      year: '2019',
-      title: '風格市集擺攤',
-      lable: '二手市集、、跳蚤市場',
+      img: evnet0101Img,
+      year: '2018',
+      lable: '北市社宅青創團隊',
+      title: '兒少家庭_野餐Pizza',
     },
     {
-      img: 'https://images.unsplash.com/photo-1556442281-77c90134c61f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      img: evnet0201Img,
       year: '2021',
-      title: '蜜桃釀酒',
-      lable: '節氣活動',
+      lable: '高齡者陪伴',
+      title: '冬至湯圓',
     },
     {
-      img: 'https://images.unsplash.com/photo-1592417817038-d13fd7342605?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740',
+      img: evnet0401Img,
+      year: '2021',
+      lable: '社宅住戶',
+      title: '新疆菜',
+    },
+    {
+      img: evnet0301Img,
       year: '2025',
-      title: 'Moisten',
-      lable: '浸潤茶葉佐餐',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1556442281-77c90134c61f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      year: '2021',
-      title: '蜜桃釀酒',
-      lable: '節氣活動',
+      lable: '風格市集',
+      title: '復古主題',
     },
   ],
 })
@@ -39,10 +44,10 @@ const eventCardsInfo = ref({
 const eventCardRef = ref(null)
 
 const handlePrevSlide = () => {
-  console.log('handlePrevSlide clicked')
-  console.log('eventCardRef.value:', eventCardRef.value)
+  // console.log('handlePrevSlide clicked')
+  // console.log('eventCardRef.value:', eventCardRef.value)
   if (eventCardRef.value) {
-    console.log('calling slidePrev')
+    // console.log('calling slidePrev')
     eventCardRef.value.slidePrev()
   } else {
     console.log('eventCardRef.value is null')
@@ -50,10 +55,10 @@ const handlePrevSlide = () => {
 }
 
 const handleNextSlide = () => {
-  console.log('handleNextSlide clicked')
-  console.log('eventCardRef.value:', eventCardRef.value)
+  // console.log('handleNextSlide clicked')
+  // console.log('eventCardRef.value:', eventCardRef.value)
   if (eventCardRef.value) {
-    console.log('calling slideNext')
+    // console.log('calling slideNext')
     eventCardRef.value.slideNext()
   } else {
     console.log('eventCardRef.value is null')
