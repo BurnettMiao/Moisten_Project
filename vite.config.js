@@ -8,7 +8,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/Moisten_Project/', // ✅ 加這行很重要！
+  // base: '/Moisten_Project/', // ✅ 加這行很重要！
   build: {
     outDir: 'docs', // ⬅️ 改輸出目錄成 docs
   },
