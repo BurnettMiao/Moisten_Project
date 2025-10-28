@@ -2,7 +2,7 @@
 // Store Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 const store = {
   title: 'Vist Our Store',
-  img: 'https://raw.githubusercontent.com/BurnettMiao/Moisten_Project/refs/heads/main/src/assets/img/StoreSection.jpg',
+  img: 'https://frauaustee.co.uk/moisten_images/store_section.jpg',
   link: 'https://www.google.com.tw',
   linkText: '即刻前往',
 }

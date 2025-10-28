@@ -5,34 +5,29 @@ import EventCard from '@/components/utility/EventCard.vue'
 import ScrollReveal from 'scrollreveal'
 
 // Event Record Section 請在此處加入圖片連結文字 ↓↓↓↓↓
-import evnet0101Img from '@/assets/img/01/9137383133475.jpg'
-import evnet0201Img from '@/assets/img/02/9119659557554.jpg'
-import evnet0301Img from '@/assets/img/03/IMG_7505.JPG'
-import evnet0401Img from '@/assets/img/04/9137382466766.jpg'
-
 const eventCardsInfo = ref({
   title: '活動紀錄',
   cardContent: [
     {
-      img: evnet0101Img,
+      img: 'https://frauaustee.co.uk/moisten_images/01/01.jpg',
       year: '2018',
       lable: '北市社宅青創團隊',
       title: '野餐Pizza',
     },
     {
-      img: evnet0201Img,
+      img: 'https://frauaustee.co.uk/moisten_images/02/01.jpg',
       year: '2021',
       lable: '高齡者陪伴',
       title: '冬至湯圓',
     },
     {
-      img: evnet0401Img,
+      img: 'https://frauaustee.co.uk/moisten_images/03/01.jpg',
       year: '2021',
       lable: '社宅住戶',
       title: '新疆菜',
     },
     {
-      img: evnet0301Img,
+      img: 'https://frauaustee.co.uk/moisten_images/04/01.jpg',
       year: '2025',
       lable: '風格市集',
       title: '復古主題',
