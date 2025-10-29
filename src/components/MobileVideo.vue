@@ -6,7 +6,7 @@ import moistenLogo from '@/assets/img/moisten_logo_213x96.png'
 const mobileVideo = ref([
   // 影片連結及文字寫法
   {
-    videoLink: 'https://frauaustee.co.uk/moisten_videos/01.mov',
+    videoLink: 'https://frauaustee.co.uk/moisten_videos/01.mp4',
     logo: moistenLogo,
   },
 ])
