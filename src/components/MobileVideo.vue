@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import moistenLogo from '@/assets/img/moisten_logo_213x96.png'
 
-// Mobile Video Section 請在此處加入影片連結文字 ↓↓↓↓↓
+// Mobile Video Section 請在此處加入影片及logo連結 ↓↓↓↓↓
 const mobileVideo = ref([
   // 影片連結及文字寫法
   {
@@ -10,7 +10,7 @@ const mobileVideo = ref([
     logo: moistenLogo,
   },
 ])
-// Mobile Video Section 請在此處加入影片連結及文字 ↑↑↑↑↑
+// Mobile Video Section 請在此處加入影片及logo連結 ↑↑↑↑↑
 </script>
 
 <template>

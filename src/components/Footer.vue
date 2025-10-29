@@ -3,7 +3,6 @@ import { ref } from 'vue'
 
 // Footer Section 請在此處加入圖片連結文字 ↓↓↓↓↓
 import moistenLogoSmall from '@/assets/img/moisten_logo_133x40.png'
-import qrCodeImg from '@/assets/img/qrCode.svg'
 
 const footer = ref({
   igLink: 'https://www.instagram.com/frau_aus_tee/',
@@ -27,7 +26,7 @@ const footer = ref({
     phone: '0987-654-321',
     mail: 'helloMisten@gmail.com',
   },
-  qrCode: qrCodeImg,
+  qrCode: 'https://frauaustee.co.uk/moisten_images/qrCode/qrCode.svg',
   footer: 'Copyright © 2025 Moisten. All rights reserved.',
 })
 // Footer Section 請在此處加入圖片連結及文字 ↑↑↑↑↑
