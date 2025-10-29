@@ -6,7 +6,7 @@ import moistenLogo from '@/assets/img/moisten_logo_213x96.png'
 const mobileVideo = ref([
   // 影片連結及文字寫法
   {
-    videoLink: 'https://frauaustee.co.uk/moisten_videos/01.mp4',
+    videoLink: 'https://frauaustee.co.uk/moisten_videos/video_01.mp4',
     logo: moistenLogo,
   },
 ])
@@ -19,9 +19,9 @@ const mobileVideo = ref([
       <video autoplay loop muted playsinline class="w-full h-full object-cover object-center">
         <source :src="item.videoLink" type="video/mp4" />
       </video>
-      <!-- <span class="absolute top-1/2 left-1/2 z-10 opacity-90 -translate-x-1/2 -translate-y-1/2">
+      <span class="absolute top-1/2 left-1/2 z-10 opacity-90 -translate-x-1/2 -translate-y-1/2">
         <img :src="item.logo" alt="" />
-      </span> -->
+      </span>
     </div>
   </div>
 </template>
