@@ -45,3 +45,12 @@ const qaInfo = ref({
     </div>
   </div>
 </template>
+
+<style scope>
+/* #qa-section {
+  background-image: url('https://images.pexels.com/photos/230483/pexels-photo-230483.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+} */
+</style>
